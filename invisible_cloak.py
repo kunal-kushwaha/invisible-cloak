@@ -33,9 +33,9 @@ while cap.isOpened():
 
         # how to get the hsv value?
         # [H-10, 100,100] and [H+10, 255, 255] as lower bound and upper bound
-        red = np.uint8([[[0,0,255]]])
-        hsv_red = cv2.cvtColor(red,cv2.COLOR_BGR2HSV)
-        print(hsv_red)
+        # red = np.uint8([[[0,0,255]]])
+        # hsv_red = cv2.cvtColor(red,cv2.COLOR_BGR2HSV)
+        # print(hsv_red)
 
         # define range of red color in hsv
         l_red = np.array([0, 120, 120])
@@ -60,6 +60,7 @@ while cap.isOpened():
 
         if cv2.waitKey(5) == ord('q'):
             break
+
 
 cap.release()
 cv2.destroyAllWindows()
